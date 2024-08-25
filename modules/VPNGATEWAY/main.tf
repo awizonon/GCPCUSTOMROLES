@@ -12,6 +12,7 @@ resource "google_compute_vpn_gateway" "vpn_gateway" {
   name                            = var.name
   network = var.network
   region = var.region
+  project = var.project_id
 
   lifecycle {
     prevent_destroy = false
