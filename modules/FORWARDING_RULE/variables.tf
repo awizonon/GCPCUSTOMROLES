@@ -31,6 +31,7 @@ variable "subnetwork" {
 }
 variable "backend_service" {
   type = string
+  default = null
 }
 variable "labels" {
   type = map(string)
