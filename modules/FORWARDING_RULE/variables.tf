@@ -33,5 +33,6 @@ variable "backend_service" {
   type = string
 }
 variable "labels" {
-  type = list()
+  type = map(string)
+  default = {}
 }
