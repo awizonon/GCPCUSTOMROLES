@@ -16,8 +16,8 @@ resource "google_compute_vpn_tunnel" "tunnel" {
   peer_ip = var.peer_ip
   shared_secret = var.shared_secret
   ike_version = var.ike_version
-  #local_traffic_selector = var.local_traffic_selector
-  #remote_traffic_selector = var.remote_traffic_selector
+  local_traffic_selector = var.local_traffic_selector
+  remote_traffic_selector = var.remote_traffic_selector
 
   lifecycle {
     prevent_destroy = false
