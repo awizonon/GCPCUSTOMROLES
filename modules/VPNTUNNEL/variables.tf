@@ -29,6 +29,3 @@ variable "remote_traffic_selector" {
 variable "labels" {
   type = string
 }
-variable "labels" {
-  type = list()
-}

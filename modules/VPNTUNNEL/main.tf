@@ -18,7 +18,6 @@ resource "google_compute_vpn_tunnel" "tunnel" {
   ike_version = var.ike_version
   #local_traffic_selector = var.local_traffic_selector
   #remote_traffic_selector = var.remote_traffic_selector
-  labels = var.labels
 
   lifecycle {
     prevent_destroy = false
