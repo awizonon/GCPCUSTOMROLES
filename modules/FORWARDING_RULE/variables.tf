@@ -23,12 +23,12 @@ variable "load_balancing_scheme" {
 variable "port_range" {
   type = string
 }
-variable "network" {
-  type = string
-}
-variable "subnetwork" {
-  type = string
-}
+# variable "network" {
+#   type = string
+# }
+# variable "subnetwork" {
+#   type = string
+# }
 variable "backend_service" {
   type = string
   default = null

@@ -15,8 +15,8 @@ resource "google_compute_forwarding_rule" "forwarding" {
   load_balancing_scheme = var.load_balancing_scheme
   target = var.target
   port_range = var.ip_protocol == "ESP" ? "" : var.port_range
-  network = var.network
-  subnetwork = var.subnetwork
+  # network = var.network
+  # subnetwork = var.subnetwork
   ip_address = var.address
   ip_protocol = var.ip_protocol
   backend_service = var.backend_service
