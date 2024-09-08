@@ -23,8 +23,11 @@ resource "google_compute_firewall" "firewall" {
     ports    = var.port
   }
 
-  allow {
-    protocol = var.icmp == 1 ? "icmp" : ""
+  dynamic "allow" {
+    for_each = var.icmp ? 1 : []
+    content {
+      protocol = "icmp"
+    }
   }
 
   target_tags = var.proxy == true ? [] : [var.name]

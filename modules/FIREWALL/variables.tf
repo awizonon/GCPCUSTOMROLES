@@ -17,7 +17,7 @@ variable "port" {
   type = list(string)
 }
 variable "icmp" {
-  type = number
+  type = list()
 }
 variable "proxy" {
   type = bool
