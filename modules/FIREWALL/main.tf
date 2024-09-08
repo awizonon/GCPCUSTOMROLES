@@ -24,7 +24,7 @@ resource "google_compute_firewall" "firewall" {
   }
 
   dynamic "allow" {
-    for_each = var.icmp ? 1 : []
+    for_each = var.icmp ? [1] : []
     content {
       protocol = "icmp"
     }
