@@ -21,8 +21,8 @@ variable "ike_version" {
   type = string
 }
 variable "local_traffic_selector" {
-  type = list()
+  type = list(string)
 }
 variable "remote_traffic_selector" {
-  type = list()
+  type = list(string)
 }
