@@ -26,6 +26,3 @@ variable "local_traffic_selector" {
 variable "remote_traffic_selector" {
   #type = string
 }
-variable "labels" {
-  type = string
-}
